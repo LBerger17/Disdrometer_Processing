@@ -17,6 +17,7 @@ Process disdrometer data from a parsevel laser disdrometer
   - when processed will have names like (sa1.ldmerge.z01.c0, sh.ldmerge.z01.c0, sat.ldmerge.z01.c0)
  
 ## Processing
+- 00 files are the original text files recorded by the instrument, b1 are processed into daily netcdf files. The original b1 files omit the spectral data. Reprocessed b1 files contain the spectral data for droplet size and fall speed.
 - depending on site set up, one or two disdrometers, if only one its installed N-S oriented (z01), if two z01 is N-S and z02 is E-W
 - merge based on wind direction, using 90 deg quadrants to select the disdrometer. Generally precipitation cells move in one direction per event, so this is fine.
 - Precipitation events are defined as achieving an intensity greater than 0.01 mm/hr
